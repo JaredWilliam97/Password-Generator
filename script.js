@@ -12,18 +12,47 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-//------------My Code-----------//
+// ------------My Code-----------//
 
-var specialCharacters = "!@#$%^&*()";
-var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var lowercase = "abcdefghijklmnopqrstuvwxys";
-var numeric = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// Assigned variables
+var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lower = "abcdefghijklmnopqrstuvwxyz";
+var numbers = "0123456789";
+var special = "!@,#$%&*{}[]/+=";
+var othercharacters = "";
 
+//do random generation here and return the final password in the end
 function generatePassword() {
-  password;
+  alert("Need a Password!!!!!!!!");
+  var passwordLength = prompt("How many characters long?");
+  if (passwordLength >= 8 && passwordLength <= 128) {
+    confirmPassword("lowercase", lowerCaseLetters);
+  } else {
+    alert("error, password must be between 8 and 128 characters long.");
+    generatePassword();
+  }
+}
+function continuePassword(type, arr) {
+    var lowerCaseConfirm = confirm("Wold you like " + type + letters in your password?);s
+
+if (lowercaseConfirm == true) {
+    // Array.prototype.push.apply(finalPassword, lowerCaseLetters);
+    for (var i of arr) {
+
+
+        finalPassword.push(i);
+
+    }
+    return;
+    );
+} else {
+    alert("nicetry");
+    return;
+
 }
 
-var password = prompt("Lets make a password");
+generatePassword();
+console.log(finalpassword);
 
-var pwdlength = getPwdLength();
-if (pwdLength === "cancel") return null;
+generateBtn.addEventListener("click", writePassword);
+
