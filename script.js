@@ -13,7 +13,7 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 // // ------------------------------My Code----------------------------------//
-
+//Variables
 var special = " !\"/#$%&'()*+,-./:;<=>?@{|}~";
 var num = "0123456789";
 var lower = "abcdefghijklmnopqrstuvwxyz";
@@ -26,6 +26,7 @@ var password = "";
 function generatePassword() {
   alert("Welcome to Jared's Password Generator! Good Luck!!!!");
 
+  ///Created while loop
   while (passwordLength > 128 || passwordLength < 8) {
     passwordLength = prompt(
       "Your password should be between 8 to 128 characters or its not gonna work."
