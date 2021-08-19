@@ -9,7 +9,7 @@ In This Project I created a password generater. I used the skills that I have le
 
 I will provide a link to for visability. As I built the project I made comments for better understanding.
 
-This project was very challenging only because this is the first time using Javascript.
+
 
 License: None
 
